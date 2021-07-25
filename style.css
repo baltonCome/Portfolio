@@ -1,0 +1,317 @@
+:root{
+    --cor0: #f5eec2;
+    --cor1: #416a59;
+    --cor3: #3ddc84;
+    --cor4: #73a24e;
+    --cor5: #a9c25d;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    align-content: center;
+}
+
+.x-large{
+    font-size: 3.5rem;
+}
+
+.large{
+    font-size: 2rem;
+}
+
+.normal{
+    font-size: 1.2rem;
+}
+
+#container{
+    max-width: 1000px;
+    display: grid;
+    border-radius: 15px;
+    padding: 15px;
+    grid-gap: 10px;
+    margin: auto;
+}
+
+#header {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#nav-bar{
+    text-align: right;
+    font-weight: 545;
+}
+
+#logo{
+    padding: 20px;
+}
+
+#container > div{
+    gap: 10px;
+}
+
+#home{
+    display: grid;
+}
+
+#home .content{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+#home .left-side{
+    position: relative;
+    top: 8rem;;
+}
+
+#home .left-side ul li{
+    margin-bottom: 2rem;
+}
+
+ul li{
+    list-style: none;
+    margin: 5px;
+}
+
+ul li a{
+    text-decoration-line: none;
+    border-radius: 20px;
+    padding: 4px;
+    transition: all 0.5s;
+}
+
+#nav-bar ul li{
+    display: inline;
+    border-radius: 20px;
+}
+
+#nav-bar ul li a:hover{
+    background-color: rgb(210, 198, 221);
+    display: inline;
+    padding: 4px;
+    border-radius: 5px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#main{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 50% 50%;
+}
+
+button{
+    display: inline-block;
+    border-radius: 7px;
+    border: none;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    width: 12rem;
+}
+
+button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+button:hover span{
+    padding-right: 25px;
+}
+
+button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+#skills{
+    display: grid;
+}
+
+#skills .right-side {
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.title{
+    text-align: center;
+    position: relative;
+    top: 4rem;
+}
+
+
+#skills .left-side{
+    text-align: right;
+    position: relative;
+    right: 5rem;
+}
+
+#skills .content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#about{
+    display: grid;
+}
+
+#about-photo{
+    max-width: 400px;
+}
+
+#about .content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#about .content div{
+    text-align: center;
+}
+
+#about .content .right-side{
+    text-align: left;
+}
+
+#contact{
+    display: grid;
+}
+
+#contact .content{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.message{
+    text-align: center;
+}
+
+.message p {
+    position: relative;
+    left: 4.3rem;
+    text-align: left;
+}
+
+.value{
+    position: relative;
+    top: -1rem;
+    left: 2.8rem;
+}
+
+.icon{
+    position: relative;
+    top: 0.3rem;
+}
+
+form{
+    align-items: center;
+}
+
+input{
+    border: none;
+    background-color: aqua;
+}
+
+#name{
+    position: relative;
+    left: -0.5rem;
+    width: 14.5rem;
+    min-height: 5rem;
+    border-radius: 0.5rem;
+}
+
+#email{
+    position: relative;
+    right: -0.5rem;
+    width: 14.5rem;
+    min-height: 5rem;
+    border-radius: 0.5rem;
+}
+
+#subject{
+    position: relative;
+    top: 1.4rem;
+    width: 30.7rem;
+    min-height: 5rem;
+    border-radius: 0.5rem;
+}
+
+#description{
+    position: relative;
+    top: 2.5rem;
+    width: 30.7rem;
+    min-height: 10rem;
+    border-radius: 0.5rem;
+}
+
+#send-message{
+    position: relative;
+    top:3rem;
+}
+
+.content{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    padding: 1rem;
+    min-height: 100%;
+}
+
+#home, #skills, #contact{
+    min-height: 50%;
+} 
+
+
+#footer{
+    background-color: aqua;
+    position: relative;
+    top: 6rem;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+#name-social{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#footer ul li{
+    position: relative;
+    float:right;
+    display: center;
+    margin: 1rem;
+}
+
+#arr{
+    display: inline;
+    text-align: center;
+}
+
+#skills .left-side ul li{
+    padding: 1rem;
+}
