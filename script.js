@@ -25,7 +25,7 @@ const highlightMenu = () =>{
         home.classList.add('highlight');
         skills.classList.remove('highlight');
         return 
-    }else if (window.innerWidth > 960 && scroll < 1440){
+    }else if (window.innerWidth > 960 && scroll < 1550){
         skills.classList.add('highlight');
         home.classList.remove('highlight');
         contact.classList.remove('highlight');

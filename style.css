@@ -37,7 +37,6 @@ body{
     padding: 15px;
     grid-gap: 5rem;
     margin: auto;
-
 }
 
 #header {
@@ -48,9 +47,6 @@ body{
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-#header{
     text-align: right;
     overflow: hidden;
 }
@@ -178,8 +174,8 @@ button:hover span:after{
 
 .title{
     text-align: center;
+    display: none;
 }
-
 
 #skills .left-side{
     text-align: right;
@@ -285,7 +281,7 @@ input{
 }
 
 #home, #skills, #contact{
-    height: 100vh;
+    height: 100vh;    
 } 
 
 #footer{
@@ -313,4 +309,12 @@ input{
 #arr{
     display: inline;
     text-align: center;
+}
+
+.highlight{
+    background-color: #fff;
+    display: inline;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
