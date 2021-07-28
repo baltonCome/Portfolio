@@ -1,15 +1,17 @@
 :root{
-    --cor0: #f5eec2;
-    --cor1: #416a59;
-    --cor3: #3ddc84;
-    --cor4: #73a24e;
-    --cor5: #a9c25d;
+    --cor0: rgba(22, 94, 94, 0.404);
 }
 
 *{
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+}
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -32,32 +34,44 @@ body{
 #container{
     max-width: 1000px;
     display: grid;
-    border-radius: 15px;
     padding: 15px;
-    grid-gap: 10px;
+    grid-gap: 5rem;
     margin: auto;
+
 }
 
 #header {
-    background-color: aqua;
+    width: 100%;
+    background-color: var(--cor0);
     display: grid;
     grid-template-columns: 30% 70%;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 2rem;
+    border-radius: 1rem;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-#nav-bar{
+#header{
     text-align: right;
-    font-weight: 545;
+    overflow: hidden;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width:inherit;
+}
+
+.sticky + #container{
+    padding-top: 10rem;
 }
 
 #logo{
-    padding: 20px;
+    text-align: left;
+    padding: 1.5rem;
 }
 
 #container > div{
-    gap: 10px;
+    gap: 1rem;
 }
 
 #home{
@@ -71,7 +85,7 @@ body{
 
 #home .left-side{
     position: relative;
-    top: 8rem;;
+    top: 8rem;
 }
 
 #home .left-side ul li{
@@ -80,26 +94,30 @@ body{
 
 ul li{
     list-style: none;
-    margin: 5px;
+    margin: 0.5rem;
 }
 
 ul li a{
     text-decoration-line: none;
-    border-radius: 20px;
-    padding: 4px;
-    transition: all 0.5s;
+    border-radius: 1rem;
+    padding: 0.4rem;
+    transition: all 0.5s ease;
+}
+
+ul li a:last-child{
+    margin-right: 2rem;
 }
 
 #nav-bar ul li{
     display: inline;
-    border-radius: 20px;
+    border-radius: 2rem;
 }
 
 #nav-bar ul li a:hover{
-    background-color: rgb(210, 198, 221);
+    background-color: rgb(248, 248, 248);
     display: inline;
-    padding: 4px;
-    border-radius: 5px;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -111,7 +129,7 @@ ul li a{
 
 button{
     display: inline-block;
-    border-radius: 7px;
+    border-radius: 0.4rem;
     border: none;
     text-align: center;
     padding: 1rem;
@@ -128,9 +146,9 @@ button span{
 }
 
 button:hover{
+    background-color: var(--cor0);
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
-
 
 button:hover span{
     padding-right: 25px;
@@ -156,13 +174,10 @@ button:hover span:after{
 
 #skills .right-side {
     padding: 2rem;
-    border-radius: 1rem;
 }
 
 .title{
     text-align: center;
-    position: relative;
-    top: 4rem;
 }
 
 
@@ -177,25 +192,15 @@ button:hover span:after{
     grid-template-columns: 50% 50%;
 }
 
-#about{
-    display: grid;
+#skills .left-side ul li{
+    padding: 1rem;
+    position: relative;
+    top: 4rem;
 }
 
-#about-photo{
-    max-width: 400px;
-}
-
-#about .content{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-#about .content div{
-    text-align: center;
-}
-
-#about .content .right-side{
-    text-align: left;
+#skills .right-side ul li{
+    padding: 0.12rem;
+    display: inline;
 }
 
 #contact{
@@ -275,18 +280,16 @@ input{
 }
 
 .content{
+    align-content: center;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    padding: 1rem;
-    min-height: 100%;
 }
 
 #home, #skills, #contact{
-    min-height: 50%;
+    height: 100vh;
 } 
 
-
 #footer{
-    background-color: aqua;
+    background-color: var(--cor0);
     position: relative;
     top: 6rem;
     display: grid;
@@ -310,8 +313,4 @@ input{
 #arr{
     display: inline;
     text-align: center;
-}
-
-#skills .left-side ul li{
-    padding: 1rem;
 }

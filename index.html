@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balton Come</title>
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <style>
@@ -20,9 +21,9 @@
         </div>
         <div id="nav-bar">
             <ul>
-                <li> <a href="#home">Home</a> </li>
-                <li> <a href="#skills">Skills</a> </li>
-                <li> <a href="#contact">Contact</a> </li>
+                <li> <a class="active" id="home_link" href="#home">Home</a> </li>
+                <li> <a class="active" id="skills_link" href="#skills" >Skills</a> </li>
+                <li> <a class="active" id="contact_link" href="#contact" >Contact</a> </li>
             </ul>
         </div>
     </div>
@@ -56,8 +57,6 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
         <div id="skills">
             <div class="title">
                 <p class="large">Skills & Interests</p>
@@ -123,7 +122,7 @@
                         <input placeholder="Email" type="text" name="email" id="email" class="user-info">
                         <input placeholder="Subject" type="text" name="subject" id="subject">
                         <input placeholder="Message" type="text" name="description" id="description">
-                        <a href="#"><button style="vertical-align: middle;" id="send-message"> <span> Send Message </span></button></a>
+                        <a href="#"><button style="vertical-align: middle;" id="send-message"> <span> Message </span></button></a>
                     </form>
                 </div>
             </div>
@@ -144,5 +143,6 @@
         </div>
         <div id="arr">All Rights Reserved</div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
