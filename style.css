@@ -1,50 +1,49 @@
 :root{
-    --cor0: rgba(22, 94, 94, 0.404);
+    --cor0: rgb(4, 114, 114);;
 }
 
 *{
     scroll-behavior: smooth;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 }
 
 body{
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     align-content: center;
 }
 
 .x-large{
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 .large{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .normal{
     font-size: 1rem;
 }
 
-/*@media screen and (max-width: 600px) {
-  body {
-    background-color: olive;
-  }
-}*/
+img{
+    border-radius: 1rem;
+}
 
 #container{
-    max-width: 1000px;
+    max-width: 800px;
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 0.8rem;
     margin: auto;
 }
 
 #header {
+    box-sizing: border-box;
     width: 100%;
     background-color: var(--cor0);
     display: flex;
     flex-grow: 1;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
     overflow: hidden;
@@ -80,9 +79,16 @@ body{
     align-items: center;
     width: 100%;
     align-content: center;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 12px 16px 0 rgba(85, 50, 50, 0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    margin: 2rem;
     margin-top: 5rem;
-    height: 80vh;
+    background-color: rgb(4, 114, 114);
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .title{
@@ -91,7 +97,7 @@ body{
 
 ul li{
     list-style: none;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 ul li a{
@@ -115,6 +121,7 @@ ul li a{
 }
 
 #main{
+    margin: 2rem;
     display: flex;
     padding: 2rem;
     justify-content: space-around;
@@ -125,10 +132,11 @@ button{
     border-radius: 0.4rem;
     border: none;
     text-align: center;
-    padding: 1rem;
+    padding: 0.8rem;
     cursor: pointer;
     transition: all 0.5s;
-    width: 12rem;
+    width: 10rem;
+    margin: 1rem;
 }
 
 button span{
@@ -139,7 +147,7 @@ button span{
 }
 
 button:hover{
-    background-color: var(--cor0);
+    background-color: #E0FF00;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
@@ -167,17 +175,21 @@ button:hover span:after{
 }
 
 #skills .content{
-    justify-content: space-around;
+    display: flex;
+    align-items: center;
 }
 
-#skills .left-side {
+#skills .content ul{
     display: flex;
+    flex-direction: column;
+    width: 95%;
 }
 
-#skills .left-side li, #skills .right-side li{
+#interests .content ul li{
     display: flex;
-    justify-items: center;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 #contact{
@@ -198,6 +210,10 @@ button:hover span:after{
     align-content: stretch;
 }
 
+.message form .big-res{
+    display: flex;
+}
+
 input{
     border: none;
     padding: 2rem;
@@ -216,7 +232,7 @@ input{
 #footer{
     display: flex;
     background-color: var(--cor0);
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 1rem;
     justify-content: space-between;
     align-items: center;
@@ -224,131 +240,35 @@ input{
 }
 
 .highlight{
-    background-color: #fff;
+    background-color: #E0FF00;
     display: inline;
     padding: 0.4rem;
     border-radius: 0.4rem;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-/*#skills .right-side {
-    padding: 2rem;
+.progress-bar{
+    background-color:#E0FF00;
+    border-radius: 0.5rem;
+    width: 100%;
 }
 
-
-#skills .left-side{
-    text-align: right;
-    position: relative;
-    right: 5rem;
-}
-
-#skills .content{
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-
-#skills .left-side ul li{
+.progress-bar > div{
+    background-color: rgb(163, 142, 142);
     padding: 1rem;
-    position: relative;
-    top: 4rem;
-}
-
-#skills .right-side ul li{
-    padding: 0.12rem;
-    display: inline;
-}/*/
-
-
-/*.message p {
-    position: relative;
-    left: 4.3rem;
-    text-align: left;
-}
-
-.value{
-    position: relative;
-    top: -1rem;
-    left: 2.8rem;
-}
-
-.icon{
-    position: relative;
-    top: 0.3rem;
-}
-
-form{
-    align-items: center;
-}
-
-input{
-    border: none;
-    background-color: aqua;
-}
-
-#name{
-    position: relative;
-    left: -0.5rem;
-    width: 14.5rem;
-    min-height: 5rem;
     border-radius: 0.5rem;
 }
 
-#email{
-    position: relative;
-    right: -0.5rem;
-    width: 14.5rem;
-    min-height: 5rem;
-    border-radius: 0.5rem;
-}
+#css{ width: 57%;}
 
-#subject{
-    position: relative;
-    top: 1.4rem;
-    width: 30.7rem;
-    min-height: 5rem;
-    border-radius: 0.5rem;
-}
+#php{ width: 43%;}
 
-#description{
-    position: relative;
-    top: 2.5rem;
-    width: 30.7rem;
-    min-height: 10rem;
-    border-radius: 0.5rem;
-}
+#html{width: 74%;}
 
-#send-message{
-    position: relative;
-    top:3rem;
-}*/
+#java{width: 68%;}
 
-/*#home, #skills, #contact{
-    height: 90vh; 
-} */
+#js{width: 32%;}
 
-/*#footer{
-    background-color: var(--cor0);
-    position: relative;
-    top: 6rem;
-    display: grid;
-    grid-template-rows: 70% 30%;
-    padding: 2rem;
-    border-radius: 1rem;
-}
+#python{width: 37%;}
 
-#name-social{
-    display: grid;
-    grid-template-columns: 30% 70%;
-}
-
-#footer ul li{
-    position: relative;
-    float:right;
-    display: center;
-    margin: 1rem;
-}
-
-#arr{
-    display: inline;
-    text-align: center;
-}*/
+#sql{width: 81%;}
