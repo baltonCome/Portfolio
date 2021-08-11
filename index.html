@@ -25,7 +25,7 @@
                 <li> <a class="active" id="skills_link" href="#skills" >Skills & Interests</a> </li>
                 <li> <a class="active" id="contact_link" href="#contact" >My Data & Contact</a> </li>
             </ul>
-        </div>
+        </div> 
     </div>
     <div id="container">
         <div id="home">
@@ -59,17 +59,17 @@
         </div>
         <div id="skills">
             <div class="title">
-                <p class="Large">Skills</p>
+                <p class="Large">Skills & Interests</p>
             </div>
             <div class="content">
                 <div class="left-side">
                     <ul>
-                        <li> <p class="normal">CSS <img src="Images/CSS.png" alt="CSS bar"></p></li>
-                        <li> <p class="normal">HTML <img src="Images/HTML.png" alt="HTML bar"></p> </li>
-                        <li> <p class="normal">Java <img src="Images/Java.png" alt="Java bar"></p></li>
-                        <li> <p class="normal">JavaScript <img src="Images/JS.png" alt="JS bar"></p></li>
-                        <li> <p class="normal">Python <img src="Images/Python.png" alt="Python bar"></p></li>
-                        <li><p class="normal">SQL <img src="Images/SQL.png" alt="SQL bar"></p> </li>
+                        <li> <p class="large">CSS <img src="Images/CSS.png" alt="CSS bar"></p></li>
+                        <li> <p class="large">HTML <img src="Images/HTML.png" alt="HTML bar"></p> </li>
+                        <li> <p class="large">Java <img src="Images/Java.png" alt="Java bar"></p></li>
+                        <li> <p class="large">JavaScript <img src="Images/JS.png" alt="JS bar"></p></li>
+                        <li> <p class="large">Python <img src="Images/Python.png" alt="Python bar"></p></li>
+                        <li><p class="large">SQL <img src="Images/SQL.png" alt="SQL bar"></p> </li>
                     </ul>
                 </div>
                 <div class="right-side">
@@ -116,32 +116,42 @@
                     </ul>
                 </div>
                 <div class="message">
-                    <p class="large"><img src="Icons/send_32px.png" alt="Send message icon" class="icon"> Message </p>
-                    <form action="">
-                        <input placeholder="Name" type="text" name="Name" id="name" class="user-info">
-                        <input placeholder="Email" type="text" name="email" id="email" class="user-info">
-                        <input placeholder="Subject" type="text" name="subject" id="subject">
-                        <input placeholder="Message" type="text" name="description" id="description">
+                    <div>
+                        <p class="large"><img src="Icons/send_32px.png" alt="Send message icon" class="icon"> Message </p>
+                    </div>
+                    <div>
+                        <form action="">
+                            <div>
+                                <input placeholder="Name" type="text" name="Name" id="name" class="user-info">
+                                <input placeholder="Email" type="text" name="email" id="email" class="user-info">
+                            </div>
+                            <div class = "big-input">
+                                <input placeholder="Subject" type="text" name="subject" id="subject">
+                                <input placeholder="Message" type="text" name="description" id="description">
+                            </div>
+                        </form>
+                    </div>
+                    <div>
                         <a href="#"><button style="vertical-align: middle;" id="send-message"> <span> Message </span></button></a>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <div id="footer">
-        <div id="name-social">
-            <div>
-                <p>Balton Come</p>
-                <p>IT Student</p>
-            </div>
+        <div>
+            <p>Balton Come</p>
+            <p>IT Student</p>
+        </div>
+        <div id="arr">All Rights Reserved</div>
+        <div>
             <ul>
                 <li> <a href="http://facebook.com/Baltoncome"> <img src="Icons/Facebook_32px.png" alt="facebook Icon"></a>
                 </li>
                 <li> <a href="http://twitter.com/baltoncome"> <img src="Icons/twitter_32px.png" alt="Twitter Icon"></a>
                 </li>
             </ul>
-        </div>
-        <div id="arr">All Rights Reserved</div>
+        </div>     
     </div>
     <script src="script.js"></script>
 </body>

@@ -7,12 +7,6 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    background-color: olive;
-  }
-}
-
 body{
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
@@ -20,35 +14,46 @@ body{
 }
 
 .x-large{
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 .large{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .normal{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
+
+/*@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+}*/
 
 #container{
     max-width: 1000px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     padding: 15px;
-    grid-gap: 5rem;
     margin: auto;
 }
 
 #header {
     width: 100%;
     background-color: var(--cor0);
-    display: grid;
-    grid-template-columns: 30% 70%;
+    display: flex;
+    flex-grow: 1;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-    text-align: right;
     overflow: hidden;
+}
+
+#logo{
+    flex-grow: 6;
+    text-align: left;
+    padding: 1.5rem;
 }
 
 .sticky{
@@ -61,36 +66,32 @@ body{
     padding-top: 10rem;
 }
 
-#logo{
-    text-align: left;
-    padding: 1.5rem;
-}
-
 #container > div{
     gap: 1rem;
 }
 
 #home{
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
-#home .content{
-    display: grid;
-    grid-template-columns: 20% 80%;
+.content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    margin-top: 5rem;
+    height: 80vh;
 }
 
-#home .left-side{
-    position: relative;
-    top: 8rem;
-}
-
-#home .left-side ul li{
-    margin-bottom: 2rem;
+.title{
+    text-align: center;
 }
 
 ul li{
     list-style: none;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
 ul li a{
@@ -98,10 +99,6 @@ ul li a{
     border-radius: 1rem;
     padding: 0.4rem;
     transition: all 0.5s ease;
-}
-
-ul li a:last-child{
-    margin-right: 2rem;
 }
 
 #nav-bar ul li{
@@ -118,9 +115,9 @@ ul li a:last-child{
 }
 
 #main{
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
 }
 
 button{
@@ -165,17 +162,79 @@ button:hover span:after{
 }
 
 #skills{
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
-#skills .right-side {
+#skills .content{
+    justify-content: space-around;
+}
+
+#skills .left-side {
+    display: flex;
+}
+
+#skills .left-side li, #skills .right-side li{
+    display: flex;
+    justify-items: center;
+    justify-content: space-around;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+#contact .content{
+    display: flex;
+}
+
+.message{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-content: stretch;
+}
+
+input{
+    border: none;
+    padding: 2rem;
+    margin: 1rem;
+    justify-content: space-around;
+    background-color: aqua;
+    border-radius: 0.5rem;
+}
+
+.big-input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#footer{
+    display: flex;
+    background-color: var(--cor0);
+    padding: 1rem;
+    border-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.highlight{
+    background-color: #fff;
+    display: inline;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/*#skills .right-side {
     padding: 2rem;
 }
 
-.title{
-    text-align: center;
-    display: none;
-}
 
 #skills .left-side{
     text-align: right;
@@ -197,22 +256,10 @@ button:hover span:after{
 #skills .right-side ul li{
     padding: 0.12rem;
     display: inline;
-}
+}/*/
 
-#contact{
-    display: grid;
-}
 
-#contact .content{
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
-
-.message{
-    text-align: center;
-}
-
-.message p {
+/*.message p {
     position: relative;
     left: 4.3rem;
     text-align: left;
@@ -273,18 +320,13 @@ input{
 #send-message{
     position: relative;
     top:3rem;
-}
+}*/
 
-.content{
-    align-content: center;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
+/*#home, #skills, #contact{
+    height: 90vh; 
+} */
 
-#home, #skills, #contact{
-    height: 100vh;    
-} 
-
-#footer{
+/*#footer{
     background-color: var(--cor0);
     position: relative;
     top: 6rem;
@@ -309,12 +351,4 @@ input{
 #arr{
     display: inline;
     text-align: center;
-}
-
-.highlight{
-    background-color: #fff;
-    display: inline;
-    padding: 0.4rem;
-    border-radius: 0.4rem;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
+}*/
