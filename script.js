@@ -22,23 +22,23 @@ const highlightMenu = () =>{
 
     let scroll = window.scrollY;
 
-    if(window.innerWidth > 960 && scroll < 600){
+    if(window.innerWidth > 800 && scroll < 600){
         home.classList.add('highlight');
         skills.classList.remove('highlight');
         insterests.classList.remove('highlight');
         return 
-    }else if (window.innerWidth > 960 && scroll < 1550){
+    }else if (window.innerWidth > 800 && scroll < 1550){
         skills.classList.add('highlight');
         insterests.classList.remove('highlight');
         home.classList.remove('highlight');
         contact.classList.remove('highlight');
         return
-    }else if (window.innerWidth > 960 && scroll < 2700){
+    }else if (window.innerWidth > 800 && scroll < 2700){
         contact.classList.remove('highlight');
         skills.classList.remove('highlight');
         insterests.classList.add('highlight');
         return
-    }else if(window.innerWidth >960 && scroll <5000){
+    }else if(window.innerWidth >800 && scroll <5000){
         contact.classList.add('highlight');
         skills.classList.remove('highlight');
         insterests.classList.remove('highlight');
