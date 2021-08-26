@@ -50,14 +50,21 @@ const highlightMenu = () =>{
     }
 }
 
-
 window.addEventListener('scroll', highlightMenu);
 window.addEventListener('click', highlightMenu);
 
+const menu = document.querySelector('#mobile-menu');
+const links = document.querySelector('.navbar-menu');
+
+const menuview = () =>{
+    menu.classList.toggle('is-active')
+    links.classList.toggle('active')
+}
+
+menu.addEventListener('click', menuview);
 
 /*
 A Funcao abaixo so faz progress bar para um elemento, deixo esse problema pra ti meu eu do futuro, nao me desaponte!
-
 
 let i = 0;
 
