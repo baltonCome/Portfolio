@@ -16,8 +16,12 @@
         max-width: 100%;
     }
 
+    #header{
+        padding: 0 !important;
+    }
+
     #name, #email{
-        max-width: 89%;
+        max-width: 90%;
         width: 30rem;
     }
 
@@ -26,8 +30,24 @@
     }
 
     input{
-        padding: 0;
-        margin: 0;
+        padding: 0.7rem !important;
+        width: 90%;
+    }
+
+    form div{
+        align-items: center;
+    }
+
+    #footer{
+        flex-direction: column;
+    }
+
+    #arr{
+        order:3;
+    }
+
+    #f-icons ul div a{
+        display: inline;
     }
 }
 
@@ -39,7 +59,6 @@
         height: auto;
         z-index: 1;
         width: 100%;
-        padding: 0;
     }
 
     .navbar-menu{
@@ -65,9 +84,9 @@
 
     .toggle .bar{
         transition: all 0.5s ease-in-out;
-        width: 30px;
-        height: 4px;
-        margin: 5px auto;
+        width: 25px;
+        height: 3.5px;
+        margin: 4px auto;
         background-color: #FFF;
     }
 
@@ -99,7 +118,7 @@
     }
 
     #mobile-menu.is-active .bar:nth-child(1){
-        transform: translateY(10.5px) rotate(45deg);
+        transform: translateY(7px) rotate(45deg);
     }
 
     #mobile-menu.is-active .bar:nth-child(3){
@@ -146,10 +165,6 @@ body{
 
 .large{
     font-size: 1.2rem;
-}
-
-.normal{
-    font-size: 1rem;
 }
 
 img{
@@ -251,6 +266,10 @@ ul li a{
     padding: 0.4rem;
     border-radius: 0.4rem;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.left-side ul div{
+    margin: 1rem 0;
 }
 
 #main{
