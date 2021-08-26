@@ -356,6 +356,10 @@ input{
     border-radius: 0.5rem;
 }
 
+.data{
+    margin-left: 1rem;
+}
+
 .big-res input{
     width: 14rem;
 }
