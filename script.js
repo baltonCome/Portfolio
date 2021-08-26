@@ -63,6 +63,17 @@ const menuview = () =>{
 
 menu.addEventListener('click', menuview);
 
+/*const hidemenu = () =>{
+    const bars = document.querySelectorAll(.'is-active')
+    if(window.innerWidth <= 600){
+        menu.classList.toggle('is-active')
+        links.classList.remove('active')
+    }
+}
+
+menu.addEventListener('click', hidemenu)
+logo.addEventListener('click', hidemenu)*/
+
 /*
 A Funcao abaixo so faz progress bar para um elemento, deixo esse problema pra ti meu eu do futuro, nao me desaponte!
 
