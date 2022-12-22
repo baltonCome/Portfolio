@@ -359,6 +359,14 @@ button:hover span:after{
     height: 100%;
 }
 
+.user-info{
+    max-width: 200px;
+}
+
+.message-content{
+    max-width: 433px;
+}
+
 .message{
     display: flex;
     flex-direction: column;
